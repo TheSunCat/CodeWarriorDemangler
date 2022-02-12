@@ -305,47 +305,4 @@ public abstract class AbstractDemangledFunctionDefinitionDataType extends Demang
 		}
 		buffer.append(parentName).append("::");
 	}
-
-	/*
-	@Override
-	public DataType getDataType(DataTypeManager dataTypeManager) {
-
-		FunctionDefinitionDataType fddt = new FunctionDefinitionDataType(getName());
-
-		if (returnType != null) {
-			fddt.setReturnType(returnType.getDataType(dataTypeManager));
-		}
-
-		setParameters(fddt, dataTypeManager);
-
-		DataType dt = DemangledDataType.findDataType(dataTypeManager, namespace, getName());
-		if (dt == null || !(dt instanceof FunctionDefinitionDataType)) {
-			dt = fddt;
-		}
-
-		return new PointerDataType(dt, dataTypeManager);
-	}
-
-	private void setParameters(FunctionDefinitionDataType fddt, DataTypeManager dataTypeManager) {
-		if (hasSingleVoidParameter(dataTypeManager)) {
-			return;
-		}
-
-		ParameterDefinition[] params = new ParameterDefinition[parameters.size()];
-		for (int i = 0; i < parameters.size(); ++i) {
-			params[i] = new ParameterDefinitionImpl(null,
-				parameters.get(i).getDataType(dataTypeManager), null);
-		}
-		fddt.setArguments(params);
-	}
-
-	private boolean hasSingleVoidParameter(DataTypeManager dataTypeManager) {
-		if (parameters.size() != 1) {
-			return false;
-		}
-
-		DemangledDataType parameter = parameters.get(0);
-		DataType dt = parameter.getDataType(dataTypeManager);
-		return dt instanceof VoidDataType;
-	}*/
 }

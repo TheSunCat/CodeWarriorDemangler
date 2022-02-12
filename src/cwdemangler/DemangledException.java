@@ -20,6 +20,8 @@ package cwdemangler;
  * A class to handle exceptions that occur demangling.
  */
 public class DemangledException extends Exception {
+	private static final long serialVersionUID = 1L; // default
+	
 	private boolean invalidMangledName;
 
 	/**
