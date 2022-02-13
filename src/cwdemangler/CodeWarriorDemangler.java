@@ -33,9 +33,9 @@ public class CodeWarriorDemangler {
 			
 			if(option.equals("help"))
 			{
-				System.out.println("Usage: cwd [STRING].");
+				System.out.println("Usage: cwd [STRING]...");
 				System.out.println("   or: cwd OPTION");
-				System.out.println("Output a demangles CodeWarrior symbol name for all specified STRING(s).");
+				System.out.println("Output a demangled CodeWarrior symbol name for all specified STRING(s).");
 				System.out.println();
 				System.out.println("--help      display this help and exit");
 				System.out.println("--version   output version information and exit");
@@ -54,7 +54,7 @@ public class CodeWarriorDemangler {
 				System.out.println("See the License for the specific language governing permissions and");
 				System.out.println("limitations under the License.");
 				System.out.println();
-				System.out.println("Written by TheSunCat.");
+				System.out.println("Written by TheSunCat. Demangling by Cuyler36.");
 			}
 			
 			return;
